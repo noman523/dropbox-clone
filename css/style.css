@@ -1,0 +1,483 @@
+
+
+/*-------------------------------------
+
+Table of contents
+
+
+*/
+
+
+/* css variables */
+
+:root {
+    --color-primary: #21b66e;
+    --color-secondary: #052944;
+    --color-blue: #0061ff;
+    --color-blue-light: #0070e0;
+    --color-blue-hover: #1a73e8;
+    --color-blue-lightbg: #e8f0fe;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #1e1919;
+    --color-gray-2: #e9ecff;
+    --color-gray-light: #767676;
+    
+}
+
+
+/* General style */
+
+
+@font-face {
+    font-family: 'Alte Haas Grotesk';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Alte Haas Grotesk'), url('../fonts/AlteHaasGroteskRegular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Alte Haas Grotesk Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Alte Haas Grotesk Bold'), url('../fonts/AlteHaasGroteskBold.woff') format('woff');
+    }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Alte Haas Grotesk';
+    color: var(--color-gray);
+    letter-spacing: -.00278rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-gray);
+}
+
+
+/* font family */
+
+.font-algos {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+
+/* bg */
+
+.bg-primary {
+    background: var(--color-primary) !important;
+}
+
+.bg-white {
+    background: var(--color-white) !important;
+}
+
+.bg-gray {
+    background: var(--color-gray-2) !important;
+}
+
+
+/* font weight*/
+
+.font-weight-light {
+    font-weight: 300 !important;
+}
+
+.font-weight-regular {
+    font-weight: 400 !important;
+}
+
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+
+/* text color */
+
+.t-color-black {
+    color: var(--color-secondary) !important;
+}
+
+.t-color-primary {
+    color: var(--color-primary) !important;
+}
+
+
+/* font size */
+
+.font-50px {
+    font-size: 50px !important;
+}
+
+.font-45px {
+    font-size: 45px !important;
+}
+
+.font-40px {
+    font-size: 40px !important;
+}
+
+.font-35px {
+    font-size: 35px !important;
+}
+
+.font-30px {
+    font-size: 30px !important;
+}
+
+.font-28px {
+    font-size: 28px !important;
+}
+
+.font-26px {
+    font-size: 26px !important;
+}
+
+.font-24px {
+    font-size: 24px !important;
+}
+
+.font-22px {
+    font-size: 22px !important;
+}
+
+.font-20px {
+    font-size: 20px !important;
+}
+
+.font-18px {
+    font-size: 18px !important;
+}
+
+.font-16px {
+    font-size: 16px !important;
+}
+
+.font-15px {
+    font-size: 15px !important;
+}
+
+.font-14px {
+    font-size: 14px !important;
+}
+
+.font-13px {
+    font-size: 13px !important;
+}
+
+.font-12px {
+    font-size: 12px !important;
+}
+
+
+
+/* Header Css Start  */
+
+.top-head {
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    height: 76px;
+    z-index: 99;
+    font-size: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #d0d4d9;
+    box-shadow: 0px 1px 1px #d0d4d9;
+    display: flex;
+    justify-items: center;
+}
+
+.top-head .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-head-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px!important;
+    min-width: 600px;
+}
+
+
+.top-brand-button{
+    font-size: 12px;
+    font-family: 'Alte Haas Grotesk Bold';
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    background: white;
+    border-radius: 5px;
+    height: 34px;
+    width: 164px;
+    margin-right: 17px;
+    margin-top: 4px;
+
+}
+
+
+ /* Header Css End  */
+
+
+
+/* Banner Part Css Start */
+
+.banner-section{
+    padding-top: 126px;
+    padding-bottom: 28px;
+    min-height: 425px;
+}
+
+.banner-image{
+    width: 300px;
+    margin-top: 120px ;
+   
+    margin-bottom: 31px;
+}
+
+.banner-content {
+    justify-content: center;
+    display: flex;
+}
+
+.banner-content .left {
+    display: inline-block;
+    vertical-align: middle;
+   
+    width: 50%;
+}
+.banner-content .right{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 50%;
+    
+}
+
+.banner-content .right .top-header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content .right .top-header .signin {
+   font-size: 18px;
+}
+.banner-content .right .top-header a {
+    font-size: 13px;
+ }
+
+ #div2{
+     display: none;
+ }
+
+ .signin-google-btn {
+     margin-top: 20px!important;
+     margin-bottom: 5px;
+     position: relative;
+     background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-image: url(/img/google.svg);
+    background-color: #1a73e8;
+    font-size: 14px;
+ }
+ .signin-google-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 36px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-color: #2265d4;
+
+
+ }
+
+ .signin-apple-btn {
+    margin-top: 20px!important;
+    margin-bottom: 5px;
+    position: relative;
+    background-size: 16px 16px;
+   background-repeat: no-repeat;
+   background-position: left 10px center;
+   background-image: url(/img/apple.svg);
+   background-color: #0f0f0f;
+   color: white;
+   font-size: 14px;
+}
+.signin-apple-btn::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 36px;
+   border-left: 1px solid rgba(0,0,0,0.1);
+   border-color: #0f0f0f;
+
+}
+.signin-apple-btn:hover {
+   color: white;
+}
+
+
+.hr-label {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    clear: both;
+    overflow: hidden;
+}
+.hr-label::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.hr-label::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.hr-label::before, .hr-label::after {
+    content: '';
+    position: relative;
+    width: 50%;
+    background-color: rgb(189, 189, 189);
+    display: inline-block;
+    height: 1px;
+    vertical-align: middle;
+}
+.hr-label__text{
+    font-size: 13px;
+}
+
+
+.username{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.password{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+.signin-remember{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.signin-remember .form-check label{
+    color: var(--color-black);
+    font-size: 13px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.signinbtn{
+    margin-top: 20px!important;
+    margin-bottom: 5px;
+    background-color: var(--color-blue)!important;
+}
+
+.signinbtn:hover{
+    background-color: var(--color-blue-light)!important;
+}
+
+.forgotpas{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.forgotpass a{
+   color: var(--color-blue-light);
+   font-size: 13px;
+}
+
+.forgotpass a:hover{
+    text-decoration: underline;
+}
+
+
+/* footer */
+
+#footer{
+    margin: auto;
+    /* width: 990px; */
+    /* background-color: whitesmoke; */
+}
+
+.footer-top-margin{
+    margin-top: 6em;
+   
+}
+.footer-border {
+    width: 100%;
+    height: 0px;
+    margin-bottom: 2em;
+    border-top: 1px solid rgb(208, 212, 217);
+}
+
+.footer-col {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 200px;
+    margin: 15px 45px 20px 15px;
+}
+
+.footer-col ul .header{
+    font-family: 'Alte Haas Grotesk Bold';
+    font-size: 13px;
+    color: var(--color-gray-light);
+}
+.footer-col ul li {
+    font-size: 13px;
+    line-height: 22px;
+    color: var(--color-gray-light);
+}
+.footer-col ul li a{
+    
+    color: var(--color-gray-light);
+}
+

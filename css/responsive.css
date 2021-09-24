@@ -1,0 +1,28 @@
+/* breakpoint */
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {}
+
+@media only screen and (max-width: 991px) and (min-width: 411px) {
+    .banner-content .left {
+        display: none;
+       
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+    .banner-content .right {
+        margin-top: 44px;
+        margin-bottom: 44px;
+        width: 80%;
+    }
+    .banner-content .left {
+        display: none;
+       
+    }
+    .top-brand-button{
+        display: none;
+    }
+    .login-footer{
+        display: none;
+    }
+}
