@@ -505,9 +505,9 @@ body {
 }
 
 
-.header-container .left{
+/* .header-container .left{
     width: 17%;
-}
+} */
 
 .header-container .right{
     width: 83%;
@@ -518,7 +518,7 @@ body {
 
 
 .brand-logo-dashboard{
-    width: 50%;
+    height: 25px;
 }
 
 
@@ -538,10 +538,10 @@ body {
 .input-dash .searchbox:hover {
     border: 1px solid black;
 }
-.input-dash input[type=search]:focus {
+/* .input-dash input[type=search]:focus {
     width: 1000px;
     border: 1px solid black;
-}
+} */
 i.fa.fa-search {
     position: absolute;
     left: 11px;
@@ -569,6 +569,7 @@ i.fa.fa-times {
     background: #f7f5f2;
     overflow-x: hidden;
     padding: 8px 0;
+    z-index: 99999;
   }
   .leftsidenav a {
     padding: 6px 8px 6px 16px;
@@ -614,11 +615,11 @@ i.fa.fa-times {
 
 
   .rightsidenav{
-    width: 130px;
+    width: 350px;
     position: fixed;
     z-index: 1;
-    top: 20px;
-    right: 10px;
+    top: 50px;
+    right: 0px;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
@@ -630,12 +631,76 @@ i.fa.fa-times {
     color: #2196F3;
     display: block;
   }
-  
-
+  .centerheader{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .centerheader p{
+    font-size: 18px;
+    }
+    .uploadoption{
+        margin-bottom: 7px;
+    }
   
   .center {
-    margin-left: 240px; /* Same width as the sidebar + left position in px */
-    margin-right: 140px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
+    margin-left: 238px;
+    margin-right: 350px;
+    font-size: 16px; /* Increased text to enable scrolling */
     padding: 0px 10px;
   }
+ .top-holder{
+    position: -webkit-sticky;
+    position: fixed;
+    top: 48px;
+    left: 248px;
+    right: 360px;
+    z-index: 1020;
+    background-color: white;
+ }
+
+ .menubar{
+    width: 20px;
+ }
+ .downarrow{
+     width: 20px;
+ }
+ .centertable{
+     margin-bottom: 0px;
+     border-bottom: 1px solid rgb(207, 207, 207);
+ }
+ .contain{
+     margin-top: 11rem;
+ }
+
+ .centertable td:nth-child(1){
+    width: 5%;
+   
+ }
+ .centertable td:nth-child(2){
+    width: 50%;
+ }
+ .centertable td:nth-child(3){
+    width: 25%;
+ }
+ .centertable td:nth-child(4){
+    width: 20%;
+ }
+
+ .filetable td:nth-child(1){
+    width: 5%;
+    
+ }
+ .filetable td:nth-child(2){
+    width: 50%;
+ }
+ .filetable td:nth-child(3){
+    width: 25%;
+ }
+ .filetable td:nth-child(4){
+    width: 20%;
+ }
+
+ .checkbox{
+     width: 20px;
+     height: 20px;
+ }
