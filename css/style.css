@@ -33,6 +33,9 @@ Table of contents
     cursor: pointer;
 }
 
+body{
+    overflow: hidden!important;
+}
 @font-face {
     font-family: 'Alte Haas Grotesk';
     font-style: normal;
@@ -572,9 +575,9 @@ i.fa.fa-times {
     z-index: 99999;
   }
   .leftsidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 8px 6px 8px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 18px;
     color: #524a3e;
     opacity: .78;
     display: block;
@@ -594,12 +597,29 @@ i.fa.fa-times {
     padding-left: 6px;
 }
 .expandall .content{
+    background-color: #FBFAF9;
     max-height: 150px;
     overflow-y: scroll;
     padding: 3px;
     box-sizing: border-box;
 }
 
+.expandall .content ul li:hover{
+    background-color: rgba(166,145,113,0.24);
+    cursor: pointer;
+}
+#insidecontentsidebar ul li{
+  
+  padding-left: 15px;
+}
+#insidecontentsidebar ul li a{
+    font-size: 12px;
+    color: #050505;
+}
+#insidecontentsidebar ul li i{
+    margin-right: 5px;
+    font-size: 8px;
+}
 .menucontainer ul:nth-child(2){
     padding-left: 28px;
     position: fixed;
@@ -612,7 +632,9 @@ i.fa.fa-times {
     font-size: 16px;
 }
 
-
+    /* .card{
+        border: 1px solid #CAC5BE;
+    } */
 
   .rightsidenav{
     width: 350px;
@@ -622,7 +644,8 @@ i.fa.fa-times {
     right: 0px;
     background: #eee;
     overflow-x: hidden;
-    padding: 8px 0;
+    border-left: 1px solid #CAC5BE;
+    /* padding:  0; */
   }
   .rightsidenav a {
     padding: 6px 8px 6px 16px;
@@ -646,16 +669,19 @@ i.fa.fa-times {
     margin-left: 238px;
     margin-right: 350px;
     font-size: 16px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
+    padding-left: 14px;
+    
   }
  .top-holder{
     position: -webkit-sticky;
     position: fixed;
     top: 48px;
-    left: 248px;
+    left: 240px;
     right: 360px;
     z-index: 1020;
     background-color: white;
+    padding-left: 10px;
  }
 
  .menubar{
@@ -670,6 +696,15 @@ i.fa.fa-times {
  }
  .contain{
      margin-top: 11rem;
+     height: 100vh;
+     overflow-y: scroll;
+     
+ }
+ .btn-linkmod{
+     color: black!important;
+ }
+ .btn-create{
+     background-color: #F2EFEB;
  }
 
  .centertable td:nth-child(1){
@@ -704,3 +739,13 @@ i.fa.fa-times {
      width: 20px;
      height: 20px;
  }
+
+ #accordion .card{
+     border-radius: 0px!important;
+ }
+ #accordion .card-header {
+    padding: .75rem 1rem!important;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
