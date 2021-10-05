@@ -17,7 +17,7 @@
     .banner-content .left {
         display: none;
     }
-    .center{
+    .centersection{
         margin-right: 0px;
     }
     .top-holder{
@@ -47,7 +47,7 @@
     /* .input-dash input[type=search]:focus {
         width: 240px;
     } */
-    .center{
+    .centersection{
         margin-right: 0px;
     }
     .top-holder{
@@ -94,10 +94,10 @@
         left: 15px;
         right: 0;
     }
-    .center {
+    .centersection {
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 28px;
+        font-size: 16px;
         padding: 0px 10px;
     }
 }

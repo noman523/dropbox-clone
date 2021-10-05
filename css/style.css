@@ -665,7 +665,7 @@ i.fa.fa-times {
         margin-bottom: 7px;
     }
   
-  .center {
+  .centersection {
     margin-left: 238px;
     margin-right: 350px;
     font-size: 16px; /* Increased text to enable scrolling */
@@ -706,6 +706,14 @@ i.fa.fa-times {
  .btn-create{
      background-color: #F2EFEB;
  }
+ .btn-blue{
+    background-color: var(--color-blue);
+    color: white;
+}
+.btn-blue:hover{
+    background-color: var(--color-blue-hover)!important;
+    color: white;
+}
 
  .centertable td:nth-child(1){
     width: 5%;
@@ -748,4 +756,8 @@ i.fa.fa-times {
     margin-bottom: 0;
     background-color: rgba(255, 255, 255, 0.03);
     border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.withoutdropicon::after{
+    display: none!important;
 }
